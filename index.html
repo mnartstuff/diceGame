@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game of PIG</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
+  <script defer src="scripts.js"></script>
+</head>
+
+<body>
+  <h1>Game of PIG</h1>
+  <p>There are two players. The player whose turn it is rolls the dice. The total of the roll is added to the current player's score, unless either die comes up as a "one". If this happens, this player's turn is over, and it is the other player’s
+    turn. After each roll, the current player can either roll again, (assuming a "one" was not rolled) or if the current player feels that luck is running thin, they can pass to the other player. The first player to get 30 points or higher wins.</p>
+  <p>Oh, and if you roll two "ones" (snake eyes), your current score gets zeroed out. So don’t do that.</p>
+
+  <div id="gamecontrol">
+    <h2>Pig Dice</h2>
+    <div class="flex">
+      <button class="show" id="startgame">Randomly Pick the First Player, and Start the Game</button>
+      <button id="rolldice">ROLL THE DICE!</button>
+      <button id="rollagain">Roll Again</button>
+      <button id="pass">Pass</button>
+      <button id="proceed">Proceed</button>
+      <button id="newgame">New Game</button>
+    </div>
+
+  </div>
+
+  <div class="flex" id="game">
+    <!-- <img id="dice1" alt="dice 1" />
+    <img id="dice2" alt="dice 2" /> -->
+  </div>
+  <div id="actions"></div>
+  <div id="score">
+    <div class="scorecard" id="score-1">
+      <h3>Player 1 Score:</h3>
+      <h4></h4>
+    </div>
+    <div class="scorecard" id="score-2">
+      <h3>Player 2 Score:</h3>
+      <h4></h4>
+    </div>
+  </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+body {
+    font-family: Arial;
+    color: #333;
+    padding: 50px;
+    line-height: 1.5em;
+}
+
+button {
+    padding: 10px;
+    margin-right: 15px;
+}
+
+div {
+    padding: 20px;
+}
+
+div.flex {
+  padding: 0;
+}
+
+#gamecontrol {
+  display: flex;
+  flex-direction: column;
+
+}
+
+#gamecontrol.center {
+  align-items: center;
+}
+
+#gamecontrol.right {
+  align-items:flex-end;
+}
+
+#gamecontrol, #score {
+    background-color: aliceblue;
+}
+
+.flex {
+  display: flex;
+}
+
+#gamecontrol button {
+  display: none;
+}
+
+#gamecontrol button.show {
+  display: block;
+}
+
+#game {
+    background-color:#0a6e1b;
+    min-height: 70px;
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+#game img {
+  margin: 0 10px;
+  width: 70px;
+  /* max-width: 256px; */
+}
+
+#actions {
+    background-color: silver;
+}
+#score {
+  display: flex;
+}
+.scorecard h4 {
+  color: #0a6e1b;
+  font-size: 2rem;
+  text-align: center;
+}
